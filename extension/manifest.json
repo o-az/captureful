@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Captureful",
-  "version": "1.0",
+  "version": "0.0.2",
   "description": "Capture scrolling screenshots of any scrollable area, including nested ones like chats, side panels and modals.",
   "icons": {
     "48": "icons/icon-48.png",
@@ -10,10 +10,19 @@
     "256": "icons/icon-256.png",
     "512": "icons/icon-512.png"
   },
-  "permissions": ["activeTab", "tabs", "storage", "scripting"],
-  "host_permissions": ["<all_urls>"],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+      "background.js"
+    ],
     "persistent": false
   },
   "action": {
@@ -29,8 +38,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ]

@@ -1,0 +1,6 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Global allowlist"
+paths = ['''^\.zed/''']

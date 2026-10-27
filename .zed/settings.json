@@ -1,0 +1,79 @@
+{
+  "file_types": {
+    "env": [
+      ".env",
+      ".env.*"
+    ],
+    "GitHub Actions": [
+      "**/.github/workflows/*.yml",
+      "**/.github/workflows/*.yaml"
+    ]
+  },
+  "hidden_files": [
+    ".DS_Store",
+    "opencode.json"
+  ],
+  "file_scan_exclusions": [
+    ".git",
+    ".DS_Store",
+    "opencode.json"
+  ],
+  "formatter": {
+    "language_server": {
+      "name": "oxfmt"
+    }
+  },
+  "format_on_save": "on",
+  "code_actions_on_format": {
+    "source.fixAll.oxc": true,
+    "source.organizeImports.oxc": true
+  },
+  "languages": {
+    "JSON": {
+      "language_servers": [
+        "oxfmt",
+        "json-language-server"
+      ]
+    },
+    "JSONC": {
+      "language_servers": [
+        "oxfmt",
+        "json-language-server"
+      ]
+    },
+    "YAML": {
+      "language_servers": [
+        "oxfmt"
+      ]
+    },
+    "Markdown": {
+      "language_servers": [
+        "markdown-oxide",
+        "oxfmt"
+      ]
+    },
+    "Swift": {
+      "language_servers": [
+        "sourcekit-lsp"
+      ],
+      "formatter": {
+        "external": {
+          "command": "swiftformat",
+          "arguments": [
+            "--stdinpath",
+            "{buffer_path}",
+            "-"
+          ]
+        }
+      },
+      "code_actions_on_format": {}
+    },
+    "Shell Script": {
+      "language_servers": [
+        "bash-language-server"
+      ],
+      "formatter": "auto",
+      "code_actions_on_format": {}
+    }
+  }
+}

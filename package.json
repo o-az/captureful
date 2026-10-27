@@ -1,0 +1,18 @@
+{
+  "name": "captureful",
+  "license": "MIT",
+  "repository": "github:o-az/captureful",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@total-typescript/ts-reset": "^0.6.1",
+    "@types/bun": "^1.4.4",
+    "@types/firefox-webext-browser": "^143.0.1",
+    "@types/node": "^26.6.5",
+    "oxfmt": "^0.74.0",
+    "oxlint": "^1.89.0",
+    "oxlint-tsgolint": "^7.0.2005"
+  },
+  "packageManager": "bun@1.4.4"
+}

@@ -1,0 +1,97 @@
+#:schema https://mise.en.dev/schema/mise.json
+
+[settings]
+experimental = true
+terminal_progress = true
+minimum_release_age = "0d"
+
+[tools]
+bun = "latest"
+shfmt = "latest"
+usage = "latest"
+tombi = "latest"
+typos = "latest"
+ghalint = "latest"
+swiftlint = "latest"
+shellcheck = "latest"
+jactionlint = "latest"
+betterleaks = "latest"
+swiftformat = "latest"
+
+[env]
+HK_MISE = 1
+DISABLE_TELEMETRY = 1
+
+[tasks.format]
+description = "Format Code"
+depends = ["format:*"]
+
+[tasks."format:web"]
+description = "Format JS, TS, JSON, HTML, CSS, Markdown, YAML & TOML"
+run = "node_modules/oxfmt/bin/oxfmt --config='oxfmt.config.ts' --write"
+
+[tasks."format:swift"]
+description = "Format Swift"
+run = "swiftformat --swiftversion 5.0 xcode"
+
+[tasks.lint]
+description = "Lint Code"
+depends = ["lint:*"]
+
+[tasks."lint:web"]
+description = "Lint & Type Check JS and TS"
+run = "node_modules/oxlint/bin/oxlint --config='oxlint.config.ts' --type-aware --type-check --fix-dangerously"
+
+[tasks."lint:swift"]
+description = "Lint Swift"
+run = "swiftlint lint --quiet xcode"
+
+[tasks."lint:xcode"]
+description = "Validate Xcode plists, storyboards & schemes"
+run = """
+    git ls-files -z -co --exclude-standard -- '*.plist' '*.pbxproj' | xargs -0 plutil -lint -s && \
+        git ls-files -z -co --exclude-standard -- '*.storyboard' '*.xcscheme' '*.xcworkspacedata' | xargs -0 xmllint --noout
+"""
+
+[tasks."lint:typos"]
+description = "Check Spelling"
+# Storyboards are full of generated object IDs that read as misspellings.
+run = "typos --exclude '*.storyboard'"
+
+[tasks."lint:toml"]
+description = "Lint TOML against its schema"
+run = "tombi lint"
+
+[tasks."lint:secrets"]
+description = "Scan for Secrets"
+run = "betterleaks dir . --config .github/.gitleaks.toml --no-banner"
+
+[tasks."build:check"]
+description = "Compile both Xcode schemes without signing"
+run = """
+    cd xcode/Captureful && \
+        for scheme in Captureful-macOS Captureful-iOS; do \
+            case "$scheme" in *iOS*) destination='generic/platform=iOS Simulator' ;; *) destination='platform=macOS' ;; esac; \
+            xcodebuild -project Captureful.xcodeproj -scheme "$scheme" -destination "$destination" \
+                -derivedDataPath ~/Library/Developer/Xcode/DerivedData/CapturefulBuildCheck \
+                CODE_SIGNING_ALLOWED=NO -quiet build || exit 1; \
+        done
+"""
+
+[tasks.check]
+description = "Format, Lint & Type Check"
+run = "mise format && mise lint"
+
+[tasks.build]
+description = "Build XCode Project"
+run = """
+    cd xcode/Captureful && \
+        xcodebuild -project Captureful.xcodeproj \
+        -scheme Captureful-macOS \
+        -destination 'platform=macOS' \
+        -allowProvisioningUpdates build
+"""
+
+[tasks.open]
+description = "Open Built App"
+run = "open ~/Library/Developer/Xcode/DerivedData/Captureful-*/Build/Products/Debug/Captureful.app"

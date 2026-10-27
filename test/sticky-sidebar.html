@@ -1,0 +1,83 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width,initial-scale=1" />
+<title>Sticky sidebar</title>
+<!--
+  Like GitHub's dashboard: only the page scrolls, and the left sidebar is pinned beside the feed.
+  Pick a card, then Bigger to the feed: the capture should leave out both sidebars and stop at the
+  feed's last card, before the footer.
+-->
+<style>
+  body {
+    margin: 0;
+    font: 16px system-ui;
+    background: #0d1117;
+    color: #e6edf3;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 56px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    background: #010409;
+    border-bottom: 1px solid #30363d;
+  }
+  .layout {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+  }
+  .left {
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+    flex: 0 0 200px;
+    height: 300px;
+    background: #161b22;
+  }
+  .feed {
+    flex: 1;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card {
+    height: 180px;
+    padding: 16px;
+    border-radius: 6px;
+    color: #000;
+  }
+  .right {
+    flex: 0 0 160px;
+    height: 600px;
+    background: #161b22;
+  }
+  footer {
+    height: 1200px;
+    padding: 16px;
+    background: #010409;
+  }
+</style>
+<header>Dashboard</header>
+<div class="layout">
+  <aside class="left">Top repositories</aside>
+  <main class="feed"></main>
+  <aside class="right">Right sidebar</aside>
+</div>
+<footer>Footer</footer>
+<script>
+  const feed = document.querySelector('.feed')
+  for (let index = 1; index <= 8; index++) {
+    const card = document.createElement('div')
+    card.className = 'card'
+    card.style.background = `hsl(${index * 18}, 70%, 70%)`
+    card.innerHTML = `<p>Card ${index}</p>`
+    feed.append(card)
+  }
+</script>
