@@ -1,0 +1,88 @@
+//
+//  view-controller.swift
+//  Shared-App
+//
+//  Created by devin on 05/10/2026.
+//
+
+import WebKit
+
+#if os(iOS)
+    import UIKit
+
+    typealias PlatformViewController = UIViewController
+#elseif os(macOS)
+    import Cocoa
+    import SafariServices
+
+    typealias PlatformViewController = NSViewController
+#endif
+
+/// Debug builds use their own identifiers (BUNDLE_IDENTIFIER_SUFFIX) so they can be installed beside
+/// a TestFlight build; the extension's is always the app's plus ".Extension".
+let extensionBundleIdentifier = Bundle.main.bundleIdentifier! + ".Extension"
+
+class ViewController: PlatformViewController, WKNavigationDelegate, WKScriptMessageHandler {
+    @IBOutlet var webView: WKWebView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        webView.navigationDelegate = self
+
+        #if os(iOS)
+            webView.scrollView.isScrollEnabled = false
+        #endif
+
+        webView.configuration.userContentController.add(self, name: "controller")
+
+        webView.loadFileURL(
+            Bundle.main.url(forResource: "main", withExtension: "html")!,
+            allowingReadAccessTo: Bundle.main.resourceURL!
+        )
+    }
+
+    func webView(_ webView: WKWebView, didFinish _: WKNavigation!) {
+        #if os(iOS)
+            webView.evaluateJavaScript("show('ios')")
+        #elseif os(macOS)
+            webView.evaluateJavaScript("show('mac')")
+
+            SFSafariExtensionManager.getStateOfSafariExtension(
+                withIdentifier: extensionBundleIdentifier
+            ) { state, error in
+                guard let state = state, error == nil else {
+                    // Insert code to inform the user that something went wrong.
+                    return
+                }
+
+                DispatchQueue.main.async {
+                    if #available(macOS 13, *) {
+                        webView.evaluateJavaScript("show('mac', \(state.isEnabled), true)")
+                    } else {
+                        webView.evaluateJavaScript("show('mac', \(state.isEnabled), false)")
+                    }
+                }
+            }
+        #endif
+    }
+
+    func userContentController(_: WKUserContentController, didReceive message: WKScriptMessage) {
+        #if os(macOS)
+            guard message.body as? String == "open-preferences" else {
+                return
+            }
+
+            SFSafariApplication.showPreferencesForExtension(withIdentifier: extensionBundleIdentifier) { error in
+                guard error == nil else {
+                    // Insert code to inform the user that something went wrong.
+                    return
+                }
+
+                DispatchQueue.main.async {
+                    NSApp.terminate(self)
+                }
+            }
+        #endif
+    }
+}

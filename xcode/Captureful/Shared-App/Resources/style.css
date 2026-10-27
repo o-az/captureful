@@ -1,0 +1,82 @@
+* {
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  cursor: default;
+}
+
+:root {
+  color-scheme: light dark;
+
+  --spacing: 20px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: var(--spacing);
+  margin: 0 calc(var(--spacing) * 2);
+  height: 100%;
+
+  font: -apple-system-short-body;
+  text-align: center;
+}
+
+body:not(.platform-mac, .platform-ios) :is(.platform-mac, .platform-ios) {
+  display: none;
+}
+
+body.platform-ios .platform-mac {
+  display: none;
+}
+
+body.platform-mac .platform-ios {
+  display: none;
+}
+
+body.platform-ios .platform-mac {
+  display: none;
+}
+
+body:not(.state-on, .state-off) :is(.state-on, .state-off) {
+  display: none;
+}
+
+body.state-on :is(.state-off, .state-unknown) {
+  display: none;
+}
+
+body.state-off :is(.state-on, .state-unknown) {
+  display: none;
+}
+
+button {
+  font-size: 1em;
+}
+
+.build-info {
+  position: fixed;
+  right: var(--spacing);
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 10px);
+  left: var(--spacing);
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.8em;
+  font-variant-numeric: tabular-nums;
+
+  /* Text color faded into the background: a brighter shade of a dark background. */
+  color: CanvasText;
+  opacity: 0.3;
+}
+
+.build-info:empty {
+  display: none;
+}

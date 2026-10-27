@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "safari-devtools": {
+      "command": "/Applications/Safari Technology Preview.app/Contents/MacOS/safaridriver",
+      "args": [
+        "--mcp"
+      ],
+      "type": "stdio"
+    }
+  }
+}

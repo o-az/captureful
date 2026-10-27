@@ -15,16 +15,16 @@
 		030C56423074882100AAD88F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030C56403074882100AAD88F /* Main.storyboard */; };
 		030C56493074882100AAD88F /* Captureful Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 030C56483074882100AAD88F /* Captureful Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		030C56533074882100AAD88F /* Captureful Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 030C56523074882100AAD88F /* Captureful Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		030C56583074882100AAD88F /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 030C561D3074882000AAD88F /* Main.html */; };
-		030C56593074882100AAD88F /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 030C561D3074882000AAD88F /* Main.html */; };
-		030C565A3074882100AAD88F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 030C561F3074882000AAD88F /* Icon.png */; };
-		030C565B3074882100AAD88F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 030C561F3074882000AAD88F /* Icon.png */; };
-		030C565C3074882100AAD88F /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 030C56203074882000AAD88F /* Style.css */; };
-		030C565D3074882100AAD88F /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 030C56203074882000AAD88F /* Style.css */; };
-		030C565E3074882100AAD88F /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 030C56213074882000AAD88F /* Script.js */; };
-		030C565F3074882100AAD88F /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 030C56213074882000AAD88F /* Script.js */; };
-		030C56603074882100AAD88F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C56223074882000AAD88F /* ViewController.swift */; };
-		030C56613074882100AAD88F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C56223074882000AAD88F /* ViewController.swift */; };
+		030C56583074882100AAD88F /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = 030C561D3074882000AAD88F /* main.html */; };
+		030C56593074882100AAD88F /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = 030C561D3074882000AAD88F /* main.html */; };
+		030C565A3074882100AAD88F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 030C561F3074882000AAD88F /* icon.png */; };
+		030C565B3074882100AAD88F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 030C561F3074882000AAD88F /* icon.png */; };
+		030C565C3074882100AAD88F /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 030C56203074882000AAD88F /* style.css */; };
+		030C565D3074882100AAD88F /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 030C56203074882000AAD88F /* style.css */; };
+		030C565E3074882100AAD88F /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 030C56213074882000AAD88F /* script.js */; };
+		030C565F3074882100AAD88F /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 030C56213074882000AAD88F /* script.js */; };
+		030C56603074882100AAD88F /* view-controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C56223074882000AAD88F /* view-controller.swift */; };
+		030C56613074882100AAD88F /* view-controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C56223074882000AAD88F /* view-controller.swift */; };
 		030C56623074882100AAD88F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030C56233074882100AAD88F /* Assets.xcassets */; };
 		030C56633074882100AAD88F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030C56233074882100AAD88F /* Assets.xcassets */; };
 		030C56643074882100AAD88F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C56253074882100AAD88F /* SafariWebExtensionHandler.swift */; };
@@ -49,14 +49,14 @@
 			containerPortal = 030C56173074882000AAD88F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 030C56473074882100AAD88F;
-			remoteInfo = "Captureful Extension (iOS)";
+			remoteInfo = "Captureful-Extension-iOS";
 		};
 		030C56543074882100AAD88F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 030C56173074882000AAD88F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 030C56513074882100AAD88F;
-			remoteInfo = "Captureful Extension (macOS)";
+			remoteInfo = "Captureful-Extension-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -86,11 +86,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		030C561E3074882000AAD88F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
-		030C561F3074882000AAD88F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		030C56203074882000AAD88F /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
-		030C56213074882000AAD88F /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
-		030C56223074882000AAD88F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		030C561E3074882000AAD88F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/main.html; sourceTree = "<group>"; };
+		030C561F3074882000AAD88F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		030C56203074882000AAD88F /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		030C56213074882000AAD88F /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		030C56223074882000AAD88F /* view-controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view-controller.swift; sourceTree = "<group>"; };
 		030C56233074882100AAD88F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		030C56253074882100AAD88F /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
 		030C562A3074882100AAD88F /* Captureful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Captureful.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,44 +150,44 @@
 		030C56163074882000AAD88F = {
 			isa = PBXGroup;
 			children = (
-				030C561B3074882000AAD88F /* Shared (App) */,
-				030C56243074882100AAD88F /* Shared (Extension) */,
-				030C562C3074882100AAD88F /* iOS (App) */,
-				030C563D3074882100AAD88F /* macOS (App) */,
-				030C564C3074882100AAD88F /* iOS (Extension) */,
-				030C56563074882100AAD88F /* macOS (Extension) */,
+				030C561B3074882000AAD88F /* Shared-App */,
+				030C56243074882100AAD88F /* Shared-Extension */,
+				030C562C3074882100AAD88F /* iOS-App */,
+				030C563D3074882100AAD88F /* macOS-App */,
+				030C564C3074882100AAD88F /* iOS-Extension */,
+				030C56563074882100AAD88F /* macOS-Extension */,
 				030C562B3074882100AAD88F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		030C561B3074882000AAD88F /* Shared (App) */ = {
+		030C561B3074882000AAD88F /* Shared-App */ = {
 			isa = PBXGroup;
 			children = (
-				030C56223074882000AAD88F /* ViewController.swift */,
+				030C56223074882000AAD88F /* view-controller.swift */,
 				030C56233074882100AAD88F /* Assets.xcassets */,
 				030C561C3074882000AAD88F /* Resources */,
 			);
-			path = "Shared (App)";
+			path = "Shared-App";
 			sourceTree = "<group>";
 		};
 		030C561C3074882000AAD88F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				030C561D3074882000AAD88F /* Main.html */,
-				030C561F3074882000AAD88F /* Icon.png */,
-				030C56203074882000AAD88F /* Style.css */,
-				030C56213074882000AAD88F /* Script.js */,
+				030C561D3074882000AAD88F /* main.html */,
+				030C561F3074882000AAD88F /* icon.png */,
+				030C56203074882000AAD88F /* style.css */,
+				030C56213074882000AAD88F /* script.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		030C56243074882100AAD88F /* Shared (Extension) */ = {
+		030C56243074882100AAD88F /* Shared-Extension */ = {
 			isa = PBXGroup;
 			children = (
 				030C56763074882100AAD88F /* Resources */,
 				030C56253074882100AAD88F /* SafariWebExtensionHandler.swift */,
 			);
-			path = "Shared (Extension)";
+			path = "Shared-Extension";
 			sourceTree = "<group>";
 		};
 		030C562B3074882100AAD88F /* Products */ = {
@@ -201,7 +201,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		030C562C3074882100AAD88F /* iOS (App) */ = {
+		030C562C3074882100AAD88F /* iOS-App */ = {
 			isa = PBXGroup;
 			children = (
 				030C562D3074882100AAD88F /* AppDelegate.swift */,
@@ -210,33 +210,33 @@
 				030C56343074882100AAD88F /* Main.storyboard */,
 				030C56373074882100AAD88F /* Info.plist */,
 			);
-			path = "iOS (App)";
+			path = "iOS-App";
 			sourceTree = "<group>";
 		};
-		030C563D3074882100AAD88F /* macOS (App) */ = {
+		030C563D3074882100AAD88F /* macOS-App */ = {
 			isa = PBXGroup;
 			children = (
 				030C563E3074882100AAD88F /* AppDelegate.swift */,
 				030C56403074882100AAD88F /* Main.storyboard */,
 				030C56433074882100AAD88F /* Info.plist */,
 			);
-			path = "macOS (App)";
+			path = "macOS-App";
 			sourceTree = "<group>";
 		};
-		030C564C3074882100AAD88F /* iOS (Extension) */ = {
+		030C564C3074882100AAD88F /* iOS-Extension */ = {
 			isa = PBXGroup;
 			children = (
 				030C564D3074882100AAD88F /* Info.plist */,
 			);
-			path = "iOS (Extension)";
+			path = "iOS-Extension";
 			sourceTree = "<group>";
 		};
-		030C56563074882100AAD88F /* macOS (Extension) */ = {
+		030C56563074882100AAD88F /* macOS-Extension */ = {
 			isa = PBXGroup;
 			children = (
 				030C56573074882100AAD88F /* Info.plist */,
 			);
-			path = "macOS (Extension)";
+			path = "macOS-Extension";
 			sourceTree = "<group>";
 		};
 		030C56763074882100AAD88F /* Resources */ = {
@@ -250,19 +250,20 @@
 				030C567C3074882100AAD88F /* content.js */,
 			);
 			name = Resources;
-			path = "Shared (Extension)";
+			path = "Shared-Extension";
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		030C56293074882100AAD88F /* Captureful (iOS) */ = {
+		030C56293074882100AAD88F /* Captureful-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 030C566C3074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful (iOS)" */;
+			buildConfigurationList = 030C566C3074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful-iOS" */;
 			buildPhases = (
 				030C56263074882100AAD88F /* Sources */,
 				030C56273074882100AAD88F /* Frameworks */,
 				030C56283074882100AAD88F /* Resources */,
+				030C56903074882100AAD88F /* Build Info */,
 				030C566B3074882100AAD88F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
@@ -270,20 +271,21 @@
 			dependencies = (
 				030C564B3074882100AAD88F /* PBXTargetDependency */,
 			);
-			name = "Captureful (iOS)";
+			name = "Captureful-iOS";
 			packageProductDependencies = (
 			);
-			productName = "Captureful (iOS)";
+			productName = "Captureful-iOS";
 			productReference = 030C562A3074882100AAD88F /* Captureful.app */;
 			productType = "com.apple.product-type.application";
 		};
-		030C563B3074882100AAD88F /* Captureful (macOS) */ = {
+		030C563B3074882100AAD88F /* Captureful-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 030C56733074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful (macOS)" */;
+			buildConfigurationList = 030C56733074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful-macOS" */;
 			buildPhases = (
 				030C56383074882100AAD88F /* Sources */,
 				030C56393074882100AAD88F /* Frameworks */,
 				030C563A3074882100AAD88F /* Resources */,
+				030C56913074882100AAD88F /* Build Info */,
 				030C56723074882100AAD88F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
@@ -291,16 +293,16 @@
 			dependencies = (
 				030C56553074882100AAD88F /* PBXTargetDependency */,
 			);
-			name = "Captureful (macOS)";
+			name = "Captureful-macOS";
 			packageProductDependencies = (
 			);
-			productName = "Captureful (macOS)";
+			productName = "Captureful-macOS";
 			productReference = 030C563C3074882100AAD88F /* Captureful.app */;
 			productType = "com.apple.product-type.application";
 		};
-		030C56473074882100AAD88F /* Captureful Extension (iOS) */ = {
+		030C56473074882100AAD88F /* Captureful-Extension-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 030C56683074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful Extension (iOS)" */;
+			buildConfigurationList = 030C56683074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful-Extension-iOS" */;
 			buildPhases = (
 				030C56443074882100AAD88F /* Sources */,
 				030C56453074882100AAD88F /* Frameworks */,
@@ -310,16 +312,16 @@
 			);
 			dependencies = (
 			);
-			name = "Captureful Extension (iOS)";
+			name = "Captureful-Extension-iOS";
 			packageProductDependencies = (
 			);
-			productName = "Captureful Extension (iOS)";
+			productName = "Captureful-Extension-iOS";
 			productReference = 030C56483074882100AAD88F /* Captureful Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		030C56513074882100AAD88F /* Captureful Extension (macOS) */ = {
+		030C56513074882100AAD88F /* Captureful-Extension-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 030C566F3074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful Extension (macOS)" */;
+			buildConfigurationList = 030C566F3074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful-Extension-macOS" */;
 			buildPhases = (
 				030C564E3074882100AAD88F /* Sources */,
 				030C564F3074882100AAD88F /* Frameworks */,
@@ -329,10 +331,10 @@
 			);
 			dependencies = (
 			);
-			name = "Captureful Extension (macOS)";
+			name = "Captureful-Extension-macOS";
 			packageProductDependencies = (
 			);
-			productName = "Captureful Extension (macOS)";
+			productName = "Captureful-Extension-macOS";
 			productReference = 030C56523074882100AAD88F /* Captureful Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
@@ -374,10 +376,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				030C56293074882100AAD88F /* Captureful (iOS) */,
-				030C563B3074882100AAD88F /* Captureful (macOS) */,
-				030C56473074882100AAD88F /* Captureful Extension (iOS) */,
-				030C56513074882100AAD88F /* Captureful Extension (macOS) */,
+				030C56293074882100AAD88F /* Captureful-iOS */,
+				030C563B3074882100AAD88F /* Captureful-macOS */,
+				030C56473074882100AAD88F /* Captureful-Extension-iOS */,
+				030C56513074882100AAD88F /* Captureful-Extension-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -387,13 +389,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030C565A3074882100AAD88F /* Icon.png in Resources */,
+				030C565A3074882100AAD88F /* icon.png in Resources */,
 				030C56333074882100AAD88F /* LaunchScreen.storyboard in Resources */,
-				030C56583074882100AAD88F /* Main.html in Resources */,
-				030C565E3074882100AAD88F /* Script.js in Resources */,
+				030C56583074882100AAD88F /* main.html in Resources */,
+				030C565E3074882100AAD88F /* script.js in Resources */,
 				030C56623074882100AAD88F /* Assets.xcassets in Resources */,
 				030C56363074882100AAD88F /* Main.storyboard in Resources */,
-				030C565C3074882100AAD88F /* Style.css in Resources */,
+				030C565C3074882100AAD88F /* style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,12 +403,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030C565B3074882100AAD88F /* Icon.png in Resources */,
-				030C565D3074882100AAD88F /* Style.css in Resources */,
+				030C565B3074882100AAD88F /* icon.png in Resources */,
+				030C565D3074882100AAD88F /* style.css in Resources */,
 				030C56423074882100AAD88F /* Main.storyboard in Resources */,
-				030C565F3074882100AAD88F /* Script.js in Resources */,
+				030C565F3074882100AAD88F /* script.js in Resources */,
 				030C56633074882100AAD88F /* Assets.xcassets in Resources */,
-				030C56593074882100AAD88F /* Main.html in Resources */,
+				030C56593074882100AAD88F /* main.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,12 +440,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		030C56903074882100AAD88F /* Build Info */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/scripts/build-info.sh",
+			);
+			name = "Build Info";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/build-info.js",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/scripts/build-info.sh\"\n";
+		};
+		030C56913074882100AAD88F /* Build Info */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/scripts/build-info.sh",
+			);
+			name = "Build Info";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/build-info.js",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/scripts/build-info.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		030C56263074882100AAD88F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030C56603074882100AAD88F /* ViewController.swift in Sources */,
+				030C56603074882100AAD88F /* view-controller.swift in Sources */,
 				030C562E3074882100AAD88F /* AppDelegate.swift in Sources */,
 				030C56303074882100AAD88F /* SceneDelegate.swift in Sources */,
 			);
@@ -453,7 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030C56613074882100AAD88F /* ViewController.swift in Sources */,
+				030C56613074882100AAD88F /* view-controller.swift in Sources */,
 				030C563F3074882100AAD88F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,23 +526,23 @@
 /* Begin PBXTargetDependency section */
 		030C564B3074882100AAD88F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 030C56473074882100AAD88F /* Captureful Extension (iOS) */;
+			target = 030C56473074882100AAD88F /* Captureful-Extension-iOS */;
 			targetProxy = 030C564A3074882100AAD88F /* PBXContainerItemProxy */;
 		};
 		030C56553074882100AAD88F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 030C56513074882100AAD88F /* Captureful Extension (macOS) */;
+			target = 030C56513074882100AAD88F /* Captureful-Extension-macOS */;
 			targetProxy = 030C56543074882100AAD88F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		030C561D3074882000AAD88F /* Main.html */ = {
+		030C561D3074882000AAD88F /* main.html */ = {
 			isa = PBXVariantGroup;
 			children = (
 				030C561E3074882000AAD88F /* Base */,
 			);
-			name = Main.html;
+			name = main.html;
 			sourceTree = "<group>";
 		};
 		030C56313074882100AAD88F /* LaunchScreen.storyboard */ = {
@@ -529,6 +576,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_IDENTIFIER_SUFFIX = .dev;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -590,6 +638,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_IDENTIFIER_SUFFIX = "";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -646,7 +695,7 @@
 				DEVELOPMENT_TEAM = Q7767Q7TRJ;
 				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_FILE = "iOS-Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Captureful;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -655,12 +704,12 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amorfati.ScrollingScreenshot.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amorfati.ScrollingScreenshot$(BUNDLE_IDENTIFIER_SUFFIX).Extension";
 				PRODUCT_NAME = "Captureful Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -680,7 +729,7 @@
 				DEVELOPMENT_TEAM = Q7767Q7TRJ;
 				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_FILE = "iOS-Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Captureful;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -689,12 +738,12 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amorfati.ScrollingScreenshot.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amorfati.ScrollingScreenshot$(BUNDLE_IDENTIFIER_SUFFIX).Extension";
 				PRODUCT_NAME = "Captureful Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -717,7 +766,7 @@
 				DEVELOPMENT_TEAM = Q7767Q7TRJ;
 				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_FILE = "iOS-App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Captureful;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -730,14 +779,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amorfati.ScrollingScreenshot;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amorfati.ScrollingScreenshot$(BUNDLE_IDENTIFIER_SUFFIX)";
 				PRODUCT_NAME = Captureful;
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -759,7 +808,7 @@
 				DEVELOPMENT_TEAM = Q7767Q7TRJ;
 				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_FILE = "iOS-App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Captureful;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -772,14 +821,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amorfati.ScrollingScreenshot;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amorfati.ScrollingScreenshot$(BUNDLE_IDENTIFIER_SUFFIX)";
 				PRODUCT_NAME = Captureful;
 				SDKROOT = iphoneos;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -803,7 +852,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_FILE = "macOS-Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Captureful;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -811,13 +860,13 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amorfati.ScrollingScreenshot.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amorfati.ScrollingScreenshot$(BUNDLE_IDENTIFIER_SUFFIX).Extension";
 				PRODUCT_NAME = "Captureful Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -839,7 +888,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_FILE = "macOS-Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Captureful;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -847,13 +896,13 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amorfati.ScrollingScreenshot.Extension;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amorfati.ScrollingScreenshot$(BUNDLE_IDENTIFIER_SUFFIX).Extension";
 				PRODUCT_NAME = "Captureful Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -878,7 +927,7 @@
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_FILE = "macOS-App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Captureful;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -887,15 +936,15 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amorfati.ScrollingScreenshot;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amorfati.ScrollingScreenshot$(BUNDLE_IDENTIFIER_SUFFIX)";
 				PRODUCT_NAME = Captureful;
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
@@ -921,7 +970,7 @@
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_FILE = "macOS-App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Captureful;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -930,15 +979,15 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.0.2;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.amorfati.ScrollingScreenshot;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amorfati.ScrollingScreenshot$(BUNDLE_IDENTIFIER_SUFFIX)";
 				PRODUCT_NAME = Captureful;
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
@@ -963,7 +1012,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		030C56683074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful Extension (iOS)" */ = {
+		030C56683074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful-Extension-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				030C56693074882100AAD88F /* Debug */,
@@ -972,7 +1021,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		030C566C3074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful (iOS)" */ = {
+		030C566C3074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				030C566D3074882100AAD88F /* Debug */,
@@ -981,7 +1030,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		030C566F3074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful Extension (macOS)" */ = {
+		030C566F3074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful-Extension-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				030C56703074882100AAD88F /* Debug */,
@@ -990,7 +1039,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		030C56733074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful (macOS)" */ = {
+		030C56733074882100AAD88F /* Build configuration list for PBXNativeTarget "Captureful-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				030C56743074882100AAD88F /* Debug */,

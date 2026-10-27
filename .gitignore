@@ -3,3 +3,72 @@ node_modules
 xcuserdata/
 build/
 DerivedData/
+# prod
+dist/
+
+# agents
+.pi
+.crush
+.cursor
+.claude
+
+# dev
+.yarn/
+!.yarn/releases
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf
+
+# deps
+node_modules/
+.wrangler
+
+# env
+.env
+.env.production
+.dev.vars
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# misc
+.DS_Store
+_
+
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+
+# jetbrains setting folder
+.idea/
+
+# Apps Script: per-developer project binding and the generated bundle
+apps-script/.clasp.json
+apps-script/dist/
+.clasprc.json
+__
+opencode.json
