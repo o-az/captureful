@@ -446,6 +446,25 @@
   }
 
   /**
+   * Whether a picked element shows in its scroller's unobstructed band, where frames come from. A
+   * scroller always does; a part of a page only while some of it is in view.
+   *
+   * @param {Element} element
+   */
+  const isInCaptureBand = element => {
+    if (isScrollTarget(element)) return true
+    const scroller = scrollerOf(element)
+    const band = unobstructedBoxOf(scroller, visibleBoxOf(scroller))
+    const rectangle = element.getBoundingClientRect()
+    return (
+      rectangle.bottom > band.top &&
+      rectangle.top < band.bottom &&
+      rectangle.right > band.left &&
+      rectangle.left < band.right
+    )
+  }
+
+  /**
    * What a tap in pick mode selects. A scrollable area under the point wins, as in chat panels.
    * Where only the page scrolls, the block under the point is selected instead, so part of a page
    * (a feed beside a pinned sidebar) can be captured.
@@ -1002,7 +1021,9 @@
         return
       }
       const remembered = state === 'armed' ? rememberedTarget() : null
-      if (remembered && scrollerOf(remembered) === scrolled) {
+      // A remembered part of a page only starts capturing while it's in view; scrolling elsewhere on
+      // the page is about something else, so it's offered for confirmation like any new area.
+      if (remembered && scrollerOf(remembered) === scrolled && isInCaptureBand(remembered)) {
         beginCapture(remembered)
         return
       }
